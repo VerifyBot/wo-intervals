@@ -1,0 +1,15 @@
+[
+  {"time": 5, "desc": "Pushup x Situp"},
+  {"time": 5, "desc": "Front x1"},
+  {"time": 5, "desc": "Back x1"},
+  {"time": 5, "desc": "Front x2"},
+  {"time": 5, "desc": "Back x2"},
+  {"time": 4, "desc": "Special ⬆️"},
+  {"time": 5, "desc": "Front x3"},
+  {"time": 5, "desc": "Back x3"},
+  {"time": 4, "desc": "Special ⬇️"},
+  {"time": 5, "desc": "Front x4"},
+  {"time": 5, "desc": "Back x4"},
+  {"time": 5, "desc": "Strech"},
+  {"time": 2, "desc": "Run!"}
+]

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+body * {
+  font-size: 2rem;
+  font-family: 'Carter One', cursive;
+  color: #eee;
+}
+
+body {
+  background: rgb(55, 55, 55);
+}
+
+.prep {
+  background-color: rgb(192, 221, 148);
+  color: white;
+  border-radius: 10px;
+  border-color: greenyellow;
+  cursor: pointer;
+}
+
+.cont {
+  text-align: center;
+  
+}
+
+.time-left {
+  font-size: 3rem;
+}
+
+.description {
+  font-style: italic;
+ 
+}
+
+.game {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(30%, -30%);
+  color: rgb(251, 185, 61);
+}
