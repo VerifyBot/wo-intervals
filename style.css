@@ -7,7 +7,7 @@ body * {
 }
 
 body {
-  background: rgb(55, 55, 55);
+  background: rgb(32, 32, 32);
 }
 
 .prep {
@@ -45,5 +45,17 @@ body {
   bottom: 0;
   left: 0;
   transform: translate(30%, -30%);
+  opacity: .5;
   color: rgb(251, 185, 61);
+
 }
+
+.eta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-30%, -30%);
+  opacity: .5;
+  color: rgb(97, 135, 218);
+}
+
