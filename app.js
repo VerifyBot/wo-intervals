@@ -10,10 +10,10 @@ $main.fadeOut(0);
 
 $prep.on('click', main);
 
-var workTime = 0;
+var workTime;
 var workDate;
 
-var eta = 0;
+var eta;
 
 function showDate() {
   let d = new Date();
@@ -58,13 +58,14 @@ async function main() {
 
   const works = await (await fetch('./data.json')).json();
 
-  eta = 0; // will change
-  for (w of works) eta += w.time*60 + 45/60;  // plus resting eta
+  eta = 0;
+  for (w of works) eta += w.time*60 + 45;  // plus resting eta
+
   workTime = eta;  // dont change
   workDate = new Date((new Date()).getTime() + workTime * 1000);
 
   console.debug(`ETA WO TIME: ${p(eta / 60)}m ${p(eta % 60)}s`);
-
+  
   for (const [i, work] of works.entries()) {
     eta = await doWork(work, eta);
 
