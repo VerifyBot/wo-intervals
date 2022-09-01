@@ -2,7 +2,7 @@
 
 A tool to help manage your workout time by setting a time limit for every exercise.
 
-`data.json` contains a list of exercises (`time` is in minutes)
+[data.json](data.json) contains a list of exercises (`time` is in minutes)
 
 The tool currently looks like this:
 ![image](https://user-images.githubusercontent.com/47427791/187893489-f80034ed-5667-4819-93ef-f85b82aa60eb.png)
