@@ -4,11 +4,25 @@ const $left = $(".time-left");
 const $desc = $(".description");
 const $date = $(".date");
 const $eta = $(".eta");
+const $wos = $(".workouts");
+const $begin = $(".begin");
 
 $prep.fadeIn(0);
 $main.fadeOut(0);
 
+$date.fadeOut(0); // exp 04/09/2022 -- TOO ANNOYING
+
 $prep.on('click', main);
+
+async function loadWorkouts() {
+  const wos = await (await fetch('workouts.json')).json();
+
+  for (let [wo, exs] of Object.entries(wos)) {
+    $wos.append(`<option value="${wo}">${wo}</option>`);
+  }
+}
+
+loadWorkouts()
 
 var workTime;
 var workDate;
@@ -53,11 +67,11 @@ async function doWork(w, eta) {
 }
 
 async function main() {
-  $prep.fadeOut(0);
+  $begin.fadeOut(0);
   $main.fadeIn(0);
 
-  const works = await (await fetch('./data.json')).json();
-
+  const works = (await (await fetch('./workouts.json')).json())[$wos.find(':selected').val()];
+  console.log(works)
   eta = 0;
   for (w of works) eta += w.time*60 + 45;  // plus resting eta
 
@@ -77,7 +91,7 @@ async function main() {
     let a = new Audio("ding.mp3");
     a.play();  
 
-    eta = await doWork({time: 45/60, desc: "Rest!"}, eta);
+    eta = await doWork({time: 45/60, desc: "Rest! Punch the air"}, eta);
   }
 
   $left.text("LETSGOOOOOOOOOOOOOOOOOOOO");
