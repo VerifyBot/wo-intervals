@@ -4,7 +4,7 @@ A tool to help manage your workout time by setting a time limit for every exerci
 
 ## Details
 
-[data.json](data.json) contains a list of exercises (`time` is in minutes) <br><br>
+[workouts.json](workouts.json) contains a mapping of wo name to exercises (`time` is in minutes) <br><br>
 After every exercise (except for the last one) you get a **45s rest**.
 
 ### Preview
