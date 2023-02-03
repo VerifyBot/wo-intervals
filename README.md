@@ -1,6 +1,9 @@
 # 💪🏿 wo-intervals
 
-A tool to help manage your workout time by setting a time limit for every exercise.
+<p>A tool to help manage your workout time by setting a time limit for every exercise.</p>
+
+**Website Available on https://verifybot.github.io/wo-intervals/**
+
 
 ## 🎯 Details
 
