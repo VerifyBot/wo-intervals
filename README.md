@@ -4,6 +4,9 @@
 
 **Website Available on https://verifybot.github.io/wo-intervals/**
 
+## 🐉 Actual Usage
+I personally use this tool sometimes when I need to finish the workout without idling too long.
+I open the website on the TV and use it to control my sets and reps time.
 
 ## 🎯 Details
 
